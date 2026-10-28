@@ -1,0 +1,6 @@
+tools/
+work/
+__pycache__/
+ironman/preview/textures/
+magneto/preview/textures/
+.claude/

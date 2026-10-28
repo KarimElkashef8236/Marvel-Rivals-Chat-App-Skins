@@ -1,0 +1,465 @@
+{
+ "hero": "Iron Man (1034), default costume 1034001",
+ "dir": "ironman",
+ "bank": "Marvel/Content/WwiseAudio/bnk_sfx_1034001.bnk",
+ "pak": "69_IronWhatsappSounds_9999999_P.pak",
+ "target_db": -22,
+ "sources": {
+  "call_connected": "call connected chime (Android app: wa_call_connect)",
+  "call_hangup": "call hang up (Android app: wa_call_hangup)",
+  "call_join": "joined the call blip (Android app: wa_call_join)",
+  "call_leave": "left the call blip (Android app: wa_call_leave)",
+  "calling": "Calling... tone (Android app: wa_call_pre_connect_1b)",
+  "group_call_ringtone": "group call ringtone (Android app: linked_group_call_ringtone_short)",
+  "message_received": "message received pop (Android app: incomingshort)",
+  "message_sent": "message sent pop (static.whatsapp.net, same as the Android app's send_message)",
+  "voice_note_blip_down": "voice note blip going down (static.whatsapp.net)",
+  "voice_note_blip_up": "voice note blip going up (static.whatsapp.net)",
+  "voice_note_record": "voice note start recording click (Android app: wa_ptt_start_record)",
+  "voice_note_sent": "voice note sent (Android app: wa_ptt_sent)",
+  "web_ding_2016": "the classic 2016 WhatsApp Web notification ding (web.whatsapp.com via web.archive.org)",
+  "group_call_connected": "group call connected chime (Android app: connect_group_call)",
+  "group_call_left": "left the group call tone (Android app: leave_group_call_m4)"
+ },
+ "never_touch": {
+  "16481798": "haptics",
+  "52729471": "haptics",
+  "97778572": "haptics",
+  "132330949": "haptics",
+  "187894060": "shared with bnk_sfx_1046001.bnk",
+  "224801128": "haptics",
+  "242178711": "haptics",
+  "248542183": "haptics",
+  "280570338": "haptics",
+  "315877359": "haptics",
+  "392751992": "haptics",
+  "448763140": "haptics",
+  "530562027": "shared with bnk_sfx_4019001.bnk",
+  "547663406": "haptics",
+  "548199056": "haptics",
+  "557250100": "shared with bnk_sfx_1046001.bnk",
+  "593373742": "shared with bnk_sfx_1028001.bnk",
+  "647281059": "haptics",
+  "695248022": "haptics",
+  "803736435": "haptics",
+  "825814298": "shared with bnk_sfx_1046001.bnk",
+  "840464423": "shared with bnk_sfx_1046001.bnk",
+  "841703812": "haptics",
+  "896162935": "haptics",
+  "916347193": "shared with bnk_sfx_1046001.bnk",
+  "924109838": "haptics",
+  "1016280023": "haptics",
+  "1022685062": "haptics",
+  "415875878": "haptics"
+ },
+ "abilities": [
+  {
+   "key": "Left click",
+   "name": "Repulsor shots 1 and 2",
+   "sound": "message_sent",
+   "sound_desc": "WhatsApp message sent pop",
+   "when": "the first two shots of each Repulsor string",
+   "events": [
+    "sfx_1034001_left1_shoot_play"
+   ],
+   "replace": [
+    786161459,
+    571024570,
+    291202972,
+    839591951,
+    795875427
+   ],
+   "mute": [
+    146977374
+   ],
+   "mute_events": [
+    "sfx_1034001_left1_start_play"
+   ]
+  },
+  {
+   "key": "Left click",
+   "name": "Repulsor 3rd shot",
+   "sound": "message_received",
+   "sound_desc": "WhatsApp message received pop",
+   "when": "the heavier third shot of the string",
+   "events": [
+    "sfx_1034001_left2_shoot_play"
+   ],
+   "replace": [
+    459542902,
+    110420484,
+    339977529
+   ],
+   "mute": [
+    146977374,
+    379010691,
+    1047198874
+   ]
+  },
+  {
+   "key": "Left click",
+   "name": "Repulsor in Armor Overdrive",
+   "sound": "voice_note_blip_up",
+   "sound_desc": "WhatsApp voice note blip (going up)",
+   "when": "every Repulsor shot while Armor Overdrive is on (Gamma / Hulk team-up too)",
+   "events": [
+    "sfx_1034001_trans1_left_shoot_play"
+   ],
+   "replace": [
+    550256883,
+    515662358,
+    421519105
+   ],
+   "mute": [
+    146977374,
+    742563683,
+    424000023,
+    857573874
+   ],
+   "mute_events": [
+    "sfx_1034001_trans1_left_start_play"
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Unibeam fire",
+   "sound": "call_connected",
+   "sound_desc": "WhatsApp call connected chime",
+   "when": "the moment the Unibeam fires (normal, Overdrive and both Thor team-up versions)",
+   "events": [
+    "sfx_1034001_right_release_play",
+    "sfx_1034001_trans1_right_release_play",
+    "sfx_1034001_103495_right_sp2_release_play",
+    "sfx_1034001_103496_right_sp2_release_play"
+   ],
+   "replace": [
+    700067629,
+    15265657,
+    818946717,
+    153300674,
+    618469210,
+    253391250,
+    450012268,
+    487414418,
+    612164841,
+    141415302,
+    614378078,
+    183478059
+   ],
+   "mute": [
+    933502982,
+    939459699,
+    905007260,
+    391087050,
+    509236630,
+    893577331,
+    1049766673,
+    261125207,
+    163492009
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Unibeam held",
+   "sound": "calling",
+   "sound_desc": "WhatsApp Calling... tone, repeating",
+   "when": "repeats for as long as you hold the Unibeam (team-up versions too)",
+   "gain_db": -3,
+   "pitch_fix": false,
+   "pad_to": 1.5,
+   "events": [
+    "sfx_1034001_right_loop_play",
+    "sfx_1034001_right_loop_p1_play",
+    "sfx_1034001_trans1_right_loop_play",
+    "sfx_1034001_trans1_right_loop_p1_play",
+    "sfx_1034001_103495_right_sp2_loop_play",
+    "sfx_1034001_103487_right_sp2_loop_play",
+    "sfx_1034001_103496_right_sp2_loop_play",
+    "sfx_1034001_right_sp_loop_play"
+   ],
+   "replace": [
+    132793893,
+    229764823,
+    810175982,
+    575984082,
+    672507476,
+    187125040
+   ],
+   "mute": [
+    484251656
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Unibeam end",
+   "sound": "call_hangup",
+   "sound_desc": "WhatsApp call hang up",
+   "when": "the beam stopping",
+   "events": [
+    "sfx_1034001_right_end_play",
+    "sfx_1034001_trans1_right_end_play",
+    "sfx_1034001_103495_right_sp2_end_play",
+    "sfx_1034001_103496_right_sp2_end_play"
+   ],
+   "replace": [
+    586687688,
+    603951490,
+    755676065,
+    209623861,
+    59384716,
+    940124662,
+    345319924,
+    9867777,
+    599941679,
+    105105880,
+    338180675,
+    230944780
+   ],
+   "mute": []
+  },
+  {
+   "key": "Shift",
+   "name": "Hyper-Velocity start",
+   "sound": "call_join",
+   "sound_desc": "WhatsApp someone joined the call",
+   "when": "boosting into Hyper-Velocity",
+   "events": [
+    "sfx_1034001_shift_fly_start_play",
+    "sfx_1034001_trans1_shift_fly_start_play"
+   ],
+   "replace": [
+    673069153,
+    575246451,
+    822121859,
+    486951589,
+    92964012,
+    697410839
+   ],
+   "mute": [
+    684208648,
+    820105507,
+    308448440,
+    123114091,
+    301166988,
+    171199158
+   ]
+  },
+  {
+   "key": "Shift",
+   "name": "Hyper-Velocity stop",
+   "sound": "call_leave",
+   "sound_desc": "WhatsApp someone left the call",
+   "when": "Hyper-Velocity ending",
+   "events": [
+    "sfx_1034001_shift_fly_end_play",
+    "sfx_1034001_trans1_shift_fly_end_play"
+   ],
+   "replace": [
+    179827088,
+    594272400,
+    358648056,
+    928615577,
+    204006490,
+    355968881
+   ],
+   "mute": [
+    135169834,
+    761218535,
+    664888241,
+    88385839,
+    178110330,
+    24928413,
+    687106841,
+    525474036,
+    551014418,
+    812014726,
+    407077245
+   ]
+  },
+  {
+   "key": "F",
+   "name": "Micro-Missile launch",
+   "sound": "voice_note_record",
+   "sound_desc": "WhatsApp voice note record click",
+   "when": "the missiles launching (can fire a few times per barrage, so it's short and a bit quieter)",
+   "gain_db": -3,
+   "events": [
+    "sfx_1034001_ctrl_shoot_play",
+    "sfx_1034001_trans1_ctrl_shoot_play"
+   ],
+   "replace": [
+    1055410026,
+    572907138,
+    1004063814,
+    642507279,
+    264117968,
+    888764491
+   ],
+   "mute": [
+    29363190,
+    755196823,
+    97067195,
+    482802273,
+    643419224,
+    730108843,
+    117259885
+   ],
+   "mute_events": [
+    "sfx_1034001_ctrl_start_play",
+    "sfx_1034001_trans1_ctrl_start_play"
+   ]
+  },
+  {
+   "key": "E",
+   "name": "Armor Overdrive on",
+   "sound": "web_ding_2016",
+   "sound_desc": "classic 2016 WhatsApp Web ding",
+   "when": "turning Armor Overdrive on (Gamma and Thor team-up versions too)",
+   "events": [
+    "sfx_1034001_e_release_play"
+   ],
+   "replace": [
+    1053200249,
+    997661478,
+    842033830
+   ],
+   "mute": [
+    614708995,
+    37552211,
+    902570727,
+    514613655,
+    249396943,
+    788537723,
+    718958951
+   ]
+  },
+  {
+   "key": "E",
+   "name": "Armor Overdrive off",
+   "sound": "group_call_left",
+   "sound_desc": "WhatsApp left the group call",
+   "when": "Armor Overdrive running out",
+   "events": [
+    "sfx_1034001_e_end_play"
+   ],
+   "replace": [
+    555754905,
+    924586097,
+    804366551
+   ],
+   "mute": []
+  },
+  {
+   "key": "Q",
+   "name": "Pulse Cannon charge",
+   "sound": "group_call_ringtone",
+   "sound_desc": "WhatsApp group call ringtone",
+   "when": "the ult charging up",
+   "events": [
+    "sfx_1034001_q_start_play",
+    "sfx_1034001_trans1_q_start_play"
+   ],
+   "replace": [
+    322051081,
+    371416748,
+    217203551,
+    5523384,
+    518422329,
+    915430145
+   ],
+   "mute": [
+    522780333,
+    582504863,
+    637782149,
+    346029532,
+    1001780609,
+    505209737
+   ]
+  },
+  {
+   "key": "Q",
+   "name": "Pulse Cannon fire",
+   "sound": "group_call_connected",
+   "sound_desc": "WhatsApp group call connected chime",
+   "when": "the ult firing (Gamma ult too)",
+   "events": [
+    "sfx_1034001_q_shoot_play",
+    "sfx_1034001_103488_q_sp2_shoot_play"
+   ],
+   "replace": [
+    384796944,
+    654758193,
+    196116015,
+    495661068,
+    718606995,
+    921919859
+   ],
+   "mute": []
+  },
+  {
+   "key": "Q",
+   "name": "Pulse Cannon end",
+   "sound": "call_hangup",
+   "sound_desc": "WhatsApp call hang up",
+   "when": "the end of the ult",
+   "events": [
+    "sfx_1034001_q_end_play",
+    "sfx_1034001_trans1_q_end_play"
+   ],
+   "replace": [
+    781619946,
+    986296185,
+    520188240,
+    839491746,
+    534725742,
+    356011779
+   ],
+   "mute": []
+  },
+  {
+   "key": "V",
+   "name": "Melee",
+   "sound": "voice_note_blip_down",
+   "sound_desc": "WhatsApp voice note blip (going down)",
+   "when": "the melee swing",
+   "events": [
+    "sfx_1034001_v1_release_play",
+    "sfx_1034001_v2_release_play",
+    "sfx_1034001_trans1_v_release_play"
+   ],
+   "replace": [
+    789860225,
+    382018804,
+    894940566,
+    249000707,
+    96176335,
+    352260609,
+    19583879,
+    535147639
+   ],
+   "mute": []
+  },
+  {
+   "key": "R",
+   "name": "Reload",
+   "sound": "voice_note_sent",
+   "sound_desc": "WhatsApp voice note sent",
+   "when": "reloading the Repulsors (only you hear it)",
+   "events": [
+    "sfx_1034001_r_reload_play"
+   ],
+   "replace": [
+    841331394,
+    514739658,
+    457597848
+   ],
+   "mute": [
+    1052751859,
+    865879907,
+    458360498
+   ]
+  }
+ ],
+ "max_rms_db": -3,
+ "limit_db": 12
+}

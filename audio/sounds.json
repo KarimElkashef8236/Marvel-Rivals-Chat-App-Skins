@@ -1,0 +1,89 @@
+{
+  "target_db": -22,
+  "keep": [64007552],
+  "keep_desc": "the ult voice line (English voice) and 1 of the 8 ult impact sounds.",
+  "keep_previews": [
+    {"file": "bnk_vo_1018001/78094833.wem", "name": "14 Q - Eye of Agamotto voice line (kept)"},
+    {"file": "bnk_sfx_1018001/64007552.wem", "name": "15 Q - Eye of Agamotto impact (kept)"}
+  ],
+  "abilities": [
+    {
+      "key": "Left click", "name": "Daggers of Denak",
+      "sound": "notification", "sound_desc": "WhatsApp message notification (the rising bloop)", "gain_db": -2,
+      "when": "every dagger volley",
+      "events": ["sfx_1018001_left_release_play"]
+    },
+    {
+      "key": "Left click", "name": "Dagger reload",
+      "sound": "alert_04", "sound_desc": "WhatsApp alert tone 4 (quick repeating pings that fade out)",
+      "when": "the daggers reloading",
+      "events": ["sfx_1018001_reload1_play"]
+    },
+    {
+      "key": "Right click", "name": "Shield of the Seraphim",
+      "sound": "alert_06", "sound_desc": "WhatsApp alert tone 6 (2 falling notes with an echo)",
+      "when": "raising the shield",
+      "events": ["sfx_1018001_right_release_play"]
+    },
+    {
+      "key": "Shift", "name": "Cloak of Levitation",
+      "sound": "alert_02", "sound_desc": "WhatsApp alert tone 2 (3 rising notes, then drops)",
+      "when": "flying up",
+      "events": ["sfx_1018001_shift_release_play"]
+    },
+    {
+      "key": "E", "name": "Gamma Maelstrom (Hulk team-up)",
+      "sound": "alert_09", "sound_desc": "WhatsApp alert tone 9 (fast falling run of notes)",
+      "when": "the Gamma Maelstrom blast",
+      "events": ["sfx_1018001_101854_e_sp2_release_play"]
+    },
+    {
+      "key": "E", "name": "Psionic Vortex (Invisible Woman team-up)",
+      "sound": "alert_10", "sound_desc": "WhatsApp alert tone 10 (4 falling notes)",
+      "when": "the Psionic Vortex pull",
+      "events": ["sfx_1018001_101856_e_sp2_release_play"]
+    },
+    {
+      "key": "E", "name": "Maelstrom of Madness (no team-up)",
+      "sound": "alert_05", "sound_desc": "WhatsApp alert tone 5 (quick ding-dong with an echo)",
+      "when": "the plain Maelstrom blast, if you ever get it without a team-up (bots still use it)",
+      "events": ["sfx_1018001_e_release1_play"]
+    },
+    {
+      "key": "F", "name": "Pentagram of Farallah (cast)",
+      "sound": "alert_01", "sound_desc": "WhatsApp alert tone 1 (5 falling notes)",
+      "when": "pressing F to start the portal",
+      "events": ["sfx_1018001_f_start_play"]
+    },
+    {
+      "key": "F", "name": "Portals open",
+      "sound": "ringtone", "sound_desc": "WhatsApp incoming call ringtone (3 rings)", "even_variants": true,
+      "when": "confirming the second portal, when they open",
+      "events": ["sfx_1018001_f_release_play"]
+    },
+    {
+      "key": "F", "name": "Portals close",
+      "sound": "hangup", "sound_desc": "WhatsApp call hang up (3 quick falling tones)",
+      "when": "the portals disappearing, or cancelling the portal",
+      "events": ["sfx_1018001_f_end_play", "sfx_1018001_f_cancel_play"]
+    },
+    {
+      "key": "V", "name": "Melee",
+      "sound": "alert_03", "sound_desc": "WhatsApp alert tone 3 (3 falling notes)",
+      "when": "the melee swing",
+      "events": ["sfx_1018001_v_release_play"]
+    },
+    {
+      "key": "Passive", "name": "Dark Magic full",
+      "sound": "alert_08", "sound_desc": "WhatsApp alert tone 8 (jumps up, then settles)",
+      "when": "Dark Magic hitting full (only you hear it)",
+      "events": ["sfx_1018001_passive_gain_play"]
+    },
+    {
+      "key": "Passive", "name": "Anti-Heal curse",
+      "sound": "alert_07", "sound_desc": "WhatsApp alert tone 7 (low and long)",
+      "when": "getting cursed for sitting on full Dark Magic too long (only you hear it, never happens with the Hulk team-up since Gamma Maelstrom removes the curse)",
+      "events": ["sfx_1018001_passive_debuff_start_play"]
+    }
+  ]
+}

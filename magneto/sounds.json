@@ -1,0 +1,943 @@
+{
+ "hero": "Magneto (1037), default costume 1037001",
+ "dir": "magneto",
+ "src": "discord",
+ "bank": "Marvel/Content/WwiseAudio/bnk_sfx_1037001.bnk",
+ "pak": "70_DiscordMagnetoSounds_9999999_P.pak",
+ "target_db": -22.0,
+ "_notes": [
+  "Built by scripts/build_magneto.py (make_sounds.py + build_audio.py) into magneto/dist/~mods.",
+  "Clips: the official Discord client sounds (mp3, from discord.com/assets) and the default soundboard sounds (soundboard_*.mp3, from cdn.discordapp.com/soundboard-sounds/<id>) in magneto/discord (the 'src' folder). Clips that aren't 44.1 kHz get resampled when they're decoded.",
+  "'repeat' / 'every' / 'lead_in' (Iron ring 2, Iron ring 3 (full), Meteor M forming): game clip = lead_in s of silence, then the clip 'repeat' times, one every 'every' s. 'prev_note' is added to the preview file name.",
+  "'optional_abilities' is ignored by make_sounds; move an entry into 'abilities' to use it.",
+  "Levels: the same rule as Iron Man (target_db against the game's own volume on each file). The ally versions the game mutes (-100 dB) are never used as the reference, make_sounds levels against the self version."
+ ],
+ "sources": {
+  "message1": "the normal message ping (DMs, @mentions) (Discord web client, https://discord.com/assets/3ed22d14f3c30bc4.mp3)",
+  "bop_message1": "message ping from the Bop sound pack (Nitro) (Discord web client, https://discord.com/assets/909464bf55b13935.mp3)",
+  "stream_user_joined": "a viewer joins the stream (Discord web client, https://discord.com/assets/3d2af2764581bb2e.mp3)",
+  "stream_started": "Go Live, a stream starts in your voice channel (Discord web client, https://discord.com/assets/abe52a3c92953edb.mp3)",
+  "clip_save": "clip saved (you saved a clip or screenshot) (Discord web client, https://discord.com/assets/fece0a7646748c01.mp3)",
+  "soundboard_airhorn": "airhorn from the soundboard (Discord soundboard, https://cdn.discordapp.com/soundboard-sounds/2)",
+  "deafen": "you deafen yourself (Discord web client, https://discord.com/assets/529ff198eac567af.mp3)",
+  "mention2": "the old @mention ping (Discord doesn't use it any more) (Discord web client, https://discord.com/assets/e0a0235d2fa32496.mp3)",
+  "undeafen": "you undeafen (Discord web client, https://discord.com/assets/b150f03c89944403.mp3)",
+  "mute": "you mute your mic (Discord web client, https://discord.com/assets/2d3b4ba32c34c862.mp3)",
+  "unmute": "you unmute your mic (Discord web client, https://discord.com/assets/e74c4a06134a20e4.mp3)",
+  "mention3": "the test ping when you switch your headset or mic (Discord web client, https://discord.com/assets/260dfacf63b6cb13.mp3)",
+  "asmr_message1": "message ping from the ASMR sound pack (Nitro) (Discord web client, https://discord.com/assets/7abbc45d8e7b179a.mp3)",
+  "call_calling": "outgoing call, waiting for them to pick up (Discord web client, https://discord.com/assets/5146737af413d88e.mp3)",
+  "call_ringing": "incoming call ringtone (Discord web client, https://discord.com/assets/c2a7111bb44b8da0.mp3)",
+  "message2": "'friend started playing a game' notification (Discord web client, https://discord.com/assets/91f9f6fa8cc9ea5c.mp3)",
+  "user_join": "someone joins your voice channel (Discord web client, https://discord.com/assets/b135ff6c8e091b43.mp3)",
+  "disconnect": "you leave or drop from voice (Discord web client, https://discord.com/assets/dd0911025fe00b2e.mp3)",
+  "soundboard_sad_horn": "sad horn (sad trombone) from the soundboard (Discord soundboard, https://cdn.discordapp.com/soundboard-sounds/5)",
+  "lofi_message1": "message ping from the Lofi sound pack (Nitro) (Discord web client, https://discord.com/assets/5aa5ffdc82cb3c74.mp3)",
+  "soundboard_quack": "quack from the soundboard (Discord soundboard, https://cdn.discordapp.com/soundboard-sounds/1)",
+  "ptt_start": "push to talk key pressed (Discord web client, https://discord.com/assets/f5c8ec31889c5317.mp3)",
+  "ptt_stop": "push to talk key released (Discord web client, https://discord.com/assets/34b5969be3a063ba.mp3)",
+  "activity_launch": "an Activity starts in your voice channel (Discord web client, https://discord.com/assets/a71f183dc4de32a3.mp3)",
+  "discodo": "Discodo easter egg (click the home button 16 times) (Discord web client, https://discord.com/assets/cb85be48267eb1b4.mp3)",
+  "ddr-down": "down arrow key in the Ctrl+/ shortcuts popup (easter egg) (Discord web client, https://discord.com/assets/c51fe62d8439bbb5.mp3)",
+  "activity_user_join": "someone joins the Activity you're in (Discord web client, https://discord.com/assets/31d2551c00b7c91e.mp3)",
+  "stage_waiting": "Stage waiting music (a Stage that hasn't started yet) (Discord web client, https://discord.com/assets/7458c5c3bc415b01.mp3)",
+  "bit_message1": "message ping from the Retro sound pack (Nitro) (Discord web client, https://discord.com/assets/795109c70fe6ea7b.mp3)",
+  "stream_user_left": "a viewer leaves the stream (Discord web client, https://discord.com/assets/24ae9dc0184bd570.mp3)",
+  "stream_ended": "a stream ends (Discord web client, https://discord.com/assets/cbff07b5a83e0321.mp3)",
+  "camera_on": "you turn your camera on (Discord web client, https://discord.com/assets/855607d0932ea396.mp3)",
+  "camera_off": "you turn your camera off (Discord web client, https://discord.com/assets/b1dd204729fe78b4.mp3)",
+  "user_leave": "someone leaves your voice channel (Discord web client, https://discord.com/assets/7b9a183742515fc2.mp3)",
+  "vibing_wumpus": "'Vibe with Wumpus' lofi track (take a break screen) (Discord web client, https://discord.com/assets/f4b4eb5a3dd2dbff.mp3)"
+ },
+ "never_touch": {
+  "6994473": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 29 more",
+  "7531427": "shared with bnk_ui_battle",
+  "22194394": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 31 more",
+  "30438309": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 51 more",
+  "48277740": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 29 more",
+  "57990419": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 51 more",
+  "63578698": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 57 more",
+  "66468700": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 52 more",
+  "71341730": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 29 more",
+  "76422865": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more",
+  "81464708": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 54 more",
+  "112844167": "shared with bnk_broken_wakanda_topic, bnk_object_01, bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016_2207 and 44 more",
+  "122722775": "haptics (motion_ event / controller vibration)",
+  "138842383": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 39 more",
+  "149057653": "shared with bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1024001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 13 more",
+  "161284429": "shared with bnk_impact_battlechess, bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 5 more",
+  "180204040": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 51 more",
+  "186877633": "shared with bnk_sfx_1065001",
+  "197288506": "shared with bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1024001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 13 more",
+  "204593348": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 54 more",
+  "206807799": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1018305 and 40 more",
+  "225676845": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1018305 and 40 more",
+  "227951191": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 31 more",
+  "250143135": "shared with bnk_ui_battle",
+  "261039515": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 33 more",
+  "264171479": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 52 more",
+  "275684369": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 54 more",
+  "276208634": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 33 more",
+  "279090214": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018305, bnk_sfx_1023001, bnk_sfx_1030001, bnk_sfx_1034001 and 18 more",
+  "282003083": "shared with bnk_ui_battle",
+  "302678721": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 51 more",
+  "313242494": "shared with bnk_sfx_1065001",
+  "351805412": "shared with bnk_impact_battlechess, bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 5 more",
+  "353375866": "shared with halloween2_bnk_4024, halloween2_bnk_4038",
+  "354583314": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "362913441": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more",
+  "370113751": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800 and 26 more",
+  "375355840": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more",
+  "385445044": "shared with bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1024001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 13 more",
+  "388235840": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 54 more",
+  "388252896": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 64 more",
+  "423242614": "shared with bnk_sfx_1065001",
+  "442025624": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800 and 26 more",
+  "445475308": "haptics (motion_ event / controller vibration)",
+  "449392598": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "450893621": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "453341693": "shared with bnk_sfx_1065001",
+  "477135140": "shared with bnk_impact_battlechess, bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 5 more",
+  "483180774": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018305, bnk_sfx_1023001, bnk_sfx_1030001, bnk_sfx_1034001 and 18 more",
+  "504880769": "shared with bnk_amb_tokyoh01, bnk_broken_wakanda_topic, bnk_object_01, bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001 and 45 more",
+  "519676297": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 31 more",
+  "523000440": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 57 more",
+  "523632291": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "535798729": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "572452896": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 36 more",
+  "575470063": "shared with bnk_sfx_1029001",
+  "578772589": "haptics (motion_ event / controller vibration)",
+  "581973135": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 33 more",
+  "590280350": "shared with bnk_sfx_1065001",
+  "608901393": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more",
+  "615703899": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018305, bnk_sfx_1023001, bnk_sfx_1030001, bnk_sfx_1034001 and 18 more",
+  "620594194": "shared with bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1024001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 13 more",
+  "628597486": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 31 more",
+  "638679166": "shared with bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800, bnk_sfx_1022001 and 14 more",
+  "654281612": "shared with halloween2_bnk_4024, halloween2_bnk_4038",
+  "656710496": "shared with bnk_amb_tokyoh01, bnk_broken_wakanda_topic, bnk_object_01, bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001 and 45 more",
+  "657130193": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "668521606": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "668657734": "shared with bnk_sfx_1065001",
+  "684468234": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "684848124": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "694712812": "shared with bnk_sfx_1065001",
+  "707247483": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 54 more",
+  "733048829": "shared with bnk_broken_wakanda_topic, bnk_object_01, bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016_2207 and 44 more",
+  "733946899": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 60 more",
+  "734055922": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 54 more",
+  "746933909": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 57 more",
+  "748387251": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "774480001": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more",
+  "778204359": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "786330477": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "789633854": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 57 more",
+  "807223145": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 38 more",
+  "817614420": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "821355564": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800 and 26 more",
+  "827906173": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 38 more",
+  "845940028": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018305, bnk_sfx_1023001, bnk_sfx_1030001, bnk_sfx_1034001 and 18 more",
+  "847390072": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "859796547": "shared with bnk_impact_battlechess, bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 5 more",
+  "871733646": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "873064929": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more",
+  "874767432": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 38 more",
+  "880337453": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 36 more",
+  "881065515": "shared with bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800, bnk_sfx_1022001 and 14 more",
+  "890027371": "shared with bnk_sfx_1065001",
+  "893230957": "shared with bnk_sfx_1065001",
+  "894209781": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 63 more",
+  "910034133": "shared with bnk_broken_wakanda_topic, bnk_object_01, bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016_2207 and 44 more",
+  "910334382": "haptics (motion_ event / controller vibration)",
+  "916066880": "shared with bnk_ui_battle",
+  "916645145": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 51 more",
+  "927480752": "shared with bnk_broken_wakanda_topic, bnk_object_01, bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016_2207 and 44 more",
+  "928183721": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 36 more",
+  "930420037": "shared with bnk_sfx_1065001",
+  "931546114": "shared with bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800, bnk_sfx_1022001 and 14 more",
+  "932535078": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more",
+  "935443813": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1018305 and 40 more",
+  "945005007": "shared with bnk_impact_general, bnk_sfx_1015001, bnk_sfx_1024001, bnk_sfx_1030300, bnk_sfx_1030801, bnk_sfx_1033001 and 13 more",
+  "958928314": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 57 more",
+  "981265315": "shared with bnk_sfx_1065001",
+  "990853608": "shared with bnk_sfx_1014001, bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800 and 26 more",
+  "990862936": "shared with bnk_sfx_1018001, bnk_sfx_1018300, bnk_sfx_1018302, bnk_sfx_1018305, bnk_sfx_1018800, bnk_sfx_1022001 and 14 more",
+  "1002564826": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "1003609528": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 33 more",
+  "1031241716": "shared with bnk_sfx_1011001, bnk_sfx_1011500, bnk_sfx_1014001, bnk_sfx_1016001, bnk_sfx_1016504, bnk_sfx_1021001 and 14 more",
+  "1035032565": "shared with bnk_impact_general, bnk_sfx_1011001, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001 and 57 more",
+  "1035948081": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1018001, bnk_sfx_1020001 and 31 more",
+  "1066203739": "shared with bnk_impact_general, bnk_sfx_1014001, bnk_sfx_1015001, bnk_sfx_1017001, bnk_sfx_1020001, bnk_sfx_1024001 and 33 more"
+ },
+ "abilities": [
+  {
+   "key": "Left click",
+   "name": "Iron Volley",
+   "sound": "message1",
+   "sound_desc": "Discord: the normal message ping (DMs, @mentions)",
+   "when": "every Iron Volley shot (all 4 fire animations)",
+   "events": [
+    "sfx_1037001_left_release"
+   ],
+   "replace": [
+    98953984,
+    676297953,
+    764370507,
+    479678685,
+    445836432,
+    410457778
+   ],
+   "mute": [
+    118330070,
+    329894666,
+    674428057
+   ]
+  },
+  {
+   "key": "Left click",
+   "name": "Iron Volley burst",
+   "sound": "bop_message1",
+   "sound_desc": "Discord: message ping from the Bop sound pack (Nitro)",
+   "when": "the orbs bursting after every volley",
+   "gain_db": -6.0,
+   "events": [
+    "sfx_1037001_left_explo"
+   ],
+   "replace": [
+    519234152,
+    704507774,
+    38108524,
+    493442990,
+    116900639,
+    201666930,
+    886329776,
+    209397319,
+    872975912
+   ],
+   "mute": [
+    714468687,
+    807876712,
+    516010995
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Mag-Cannon (1 ring)",
+   "sound": "stream_user_joined",
+   "sound_desc": "Discord: a viewer joins the stream",
+   "when": "Mag-Cannon fired with 1 ring",
+   "events": [
+    "sfx_1037001_right_release1_play"
+   ],
+   "replace": [
+    557189761,
+    855322720,
+    624157209,
+    632144497
+   ],
+   "mute": [
+    838212171
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Mag-Cannon (2 rings)",
+   "sound": "stream_started",
+   "sound_desc": "Discord: Go Live, a stream starts in your voice channel",
+   "when": "Mag-Cannon fired with 2 rings",
+   "start": 0.0,
+   "end": 0.314,
+   "gain_db": 1.0,
+   "events": [
+    "sfx_1037001_right_release2_play"
+   ],
+   "replace": [
+    338924989,
+    394458521,
+    413097967,
+    995260772
+   ],
+   "mute": [
+    1035550604
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Mag-Cannon (3 rings, full)",
+   "sound": "stream_started",
+   "sound_desc": "Discord: Go Live, a stream starts in your voice channel",
+   "when": "Mag-Cannon fired with 3 rings, full",
+   "gain_db": 2.0,
+   "events": [
+    "sfx_1037001_right_release3_play"
+   ],
+   "replace": [
+    284941576,
+    153976229,
+    588610833,
+    579277169
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Mag-Cannon hit",
+   "sound": "clip_save",
+   "sound_desc": "Discord: clip saved (you saved a clip or screenshot)",
+   "when": "a Mag-Cannon hit (also the full-energy hit)",
+   "gain_db": -2.0,
+   "events": [
+    "sfx_1037001_right_impact_play"
+   ],
+   "replace": [
+    584910738,
+    148345098,
+    229168851
+   ]
+  },
+  {
+   "key": "Right click",
+   "name": "Mag-Cannon knock-back",
+   "sound": "soundboard_airhorn",
+   "sound_desc": "Discord: airhorn from the soundboard",
+   "when": "a full-ring Mag-Cannon knocks someone back (only you and the person hit hear it)",
+   "gain_db": -2.0,
+   "events": [
+    "sfx_1037001_right_release_debuff_play"
+   ],
+   "replace": [
+    455200848,
+    332010919,
+    527023
+   ]
+  },
+  {
+   "key": "Left Shift",
+   "name": "Metallic Curtain up",
+   "sound": "deafen",
+   "sound_desc": "Discord: you deafen yourself",
+   "when": "raising the Metallic Curtain",
+   "events": [
+    "sfx_1037001_shift_release_play"
+   ],
+   "replace": [
+    170644895,
+    511259730,
+    697932823
+   ],
+   "mute": [
+    975807859
+   ]
+  },
+  {
+   "key": "Left Shift",
+   "name": "Metallic Curtain blocks a shot",
+   "sound": "mention2",
+   "sound_desc": "Discord: the old @mention ping (Discord doesn't use it any more)",
+   "when": "each projectile the curtain stops, can be several a second",
+   "start": 0.0,
+   "end": 0.15,
+   "gain_db": -8.0,
+   "events": [
+    "sfx_1037001_shift_impact_self_play"
+   ],
+   "replace": [
+    76604095,
+    385654335,
+    1012637508
+   ],
+   "mute": [
+    555958198
+   ]
+  },
+  {
+   "key": "Left Shift",
+   "name": "Metallic Curtain down",
+   "sound": "undeafen",
+   "sound_desc": "Discord: you undeafen",
+   "when": "the Metallic Curtain ending",
+   "events": [
+    "sfx_1037001_shift_end_play"
+   ],
+   "replace": [
+    905786739,
+    927977726
+   ],
+   "mute": [
+    773411659
+   ]
+  },
+  {
+   "key": "E and F",
+   "name": "Bulwark shield up",
+   "sound": "mute",
+   "sound_desc": "Discord: you mute your mic",
+   "when": "Metal Bulwark (E, on an ally) or Iron Bulwark (F, on himself) appearing",
+   "events": [
+    "sfx_1037001_e_child_start_play"
+   ],
+   "replace": [
+    133538675,
+    895386776
+   ]
+  },
+  {
+   "key": "E and F",
+   "name": "Bulwark shield down",
+   "sound": "unmute",
+   "sound_desc": "Discord: you unmute your mic",
+   "when": "the Bulwark shield breaking or running out",
+   "events": [
+    "sfx_1037001_e_child_end_play"
+   ],
+   "replace": [
+    596234420,
+    73740529,
+    972957843
+   ],
+   "mute": [
+    613741789
+   ]
+  },
+  {
+   "key": "Passive",
+   "name": "Iron ring 1",
+   "sound": "mention3",
+   "sound_desc": "Discord: the test ping when you switch your headset or mic",
+   "when": "the 1st iron ring forming",
+   "start": 0.137,
+   "end": 0.26,
+   "gain_db": -2.0,
+   "events": [
+    "sfx_1037001_passive_absorb1_play"
+   ],
+   "replace": [
+    229924513,
+    220774048
+   ],
+   "mute": [
+    130618370
+   ]
+  },
+  {
+   "key": "Passive",
+   "name": "Iron ring 2",
+   "sound": "mention3",
+   "sound_desc": "Discord: the test ping when you switch your headset or mic",
+   "when": "the 2nd iron ring forming",
+   "start": 0.137,
+   "end": 0.26,
+   "gain_db": -1.0,
+   "repeat": 2,
+   "every": 0.12,
+   "events": [
+    "sfx_1037001_passive_absorb2_play"
+   ],
+   "replace": [
+    504996263
+   ],
+   "mute": [
+    138680307
+   ]
+  },
+  {
+   "key": "Passive",
+   "name": "Iron ring 3 (full)",
+   "sound": "mention3",
+   "sound_desc": "Discord: the test ping when you switch your headset or mic",
+   "when": "the 3rd iron ring forming: Mag-Cannon is at full power",
+   "start": 0.137,
+   "end": 0.26,
+   "gain_db": 1.0,
+   "repeat": 3,
+   "every": 0.12,
+   "events": [
+    "sfx_1037001_passive_absorb3_play"
+   ],
+   "replace": [
+    1023816058,
+    558616184
+   ],
+   "mute": [
+    668811517
+   ]
+  },
+  {
+   "key": "R",
+   "name": "Reload",
+   "sound": "asmr_message1",
+   "sound_desc": "Discord: message ping from the ASMR sound pack (Nitro)",
+   "when": "reloading Iron Volley",
+   "start": 0.33,
+   "gain_db": -2.0,
+   "events": [
+    "sfx_1037001_r_release_play"
+   ],
+   "replace": [
+    169044706,
+    586774980,
+    1049007812
+   ],
+   "mute": [
+    1053289654
+   ],
+   "mute_events": [
+    "sfx_1037001_r_absorb1_play",
+    "sfx_1037001_r_absorb2_play",
+    "sfx_1037001_r_absorb3_play"
+   ]
+  },
+  {
+   "key": "Q",
+   "name": "Meteor M cast",
+   "sound": "call_calling",
+   "sound_desc": "Discord: outgoing call, waiting for them to pick up",
+   "when": "pressing Q (with 'Fear Magneto!')",
+   "start": 0.0,
+   "end": 0.95,
+   "gain_db": 2.0,
+   "events": [
+    "sfx_1037001_q_start"
+   ],
+   "replace": [
+    361019606,
+    746053380,
+    171598121
+   ],
+   "mute": [
+    20471252
+   ]
+  },
+  {
+   "key": "Q",
+   "name": "Meteor M forming",
+   "sound": "call_ringing",
+   "sound_desc": "Discord: incoming call ringtone",
+   "when": "while the meteor forms, until it's thrown",
+   "repeat": 1,
+   "every": 5.369,
+   "lead_in": 0.5,
+   "prev_note": " (full ring, cut short when you throw)",
+   "events": [
+    "sfx_1037001_q_child_start_play"
+   ],
+   "replace": [
+    884048673,
+    587586351,
+    586936657,
+    331851981
+   ],
+   "mute": [
+    291065174
+   ]
+  },
+  {
+   "key": "Q",
+   "name": "Meteor absorbs a shot",
+   "sound": "message2",
+   "sound_desc": "Discord: 'friend started playing a game' notification",
+   "when": "each projectile the meteor swallows",
+   "start": 0.0,
+   "end": 0.141,
+   "gain_db": -8.0,
+   "events": [
+    "sfx_1037001_q_child_absorb_play"
+   ],
+   "replace": [
+    428774173,
+    17622980,
+    961491327,
+    931048443,
+    640286366,
+    844775027,
+    167770174,
+    296272772,
+    906615086,
+    802404639,
+    21157192,
+    1006170430,
+    209942967,
+    35850007,
+    101947920
+   ]
+  },
+  {
+   "key": "Q",
+   "name": "Meteor M thrown",
+   "sound": "user_join",
+   "sound_desc": "Discord: someone joins your voice channel",
+   "when": "throwing the meteor",
+   "gain_db": 1.0,
+   "events": [
+    "sfx_1037001_q_release"
+   ],
+   "replace": [
+    744393175,
+    143313839,
+    824079349
+   ],
+   "mute": [
+    831444564,
+    1000982248,
+    234569062,
+    841967870
+   ]
+  },
+  {
+   "key": "Q",
+   "name": "Meteor M impact",
+   "sound": "disconnect",
+   "sound_desc": "Discord: you leave or drop from voice",
+   "when": "the meteor landing",
+   "gain_db": 2.0,
+   "events": [
+    "sfx_1037001_q_explo"
+   ],
+   "replace": [
+    465763209,
+    659074377,
+    75594779
+   ],
+   "mute": [
+    414507073,
+    101597121,
+    508910138,
+    191546796,
+    777487411,
+    652130120,
+    736537024,
+    185591780,
+    374170498,
+    396341579,
+    192185433,
+    368019844,
+    121340184
+   ]
+  },
+  {
+   "key": "Q",
+   "name": "Meteor M shattered",
+   "sound": "soundboard_sad_horn",
+   "sound_desc": "Discord: sad horn (sad trombone) from the soundboard",
+   "when": "the meteor breaking (overload or destroyed) before it's thrown",
+   "events": [
+    "sfx_1037001_q_child_damage_play"
+   ],
+   "replace": [
+    566397846,
+    799871272,
+    369630885
+   ],
+   "mute": [
+    154748305
+   ]
+  },
+  {
+   "key": "V",
+   "name": "Melee",
+   "sound": "lofi_message1",
+   "sound_desc": "Discord: message ping from the Lofi sound pack (Nitro)",
+   "when": "the quick melee swing",
+   "events": [
+    "sfx_1037001_v_release_play"
+   ],
+   "replace": [
+    249178863,
+    139258106,
+    881172143
+   ],
+   "mute": [
+    858350777
+   ]
+  },
+  {
+   "key": "V",
+   "name": "Melee hit",
+   "sound": "soundboard_quack",
+   "sound_desc": "Discord: quack from the soundboard",
+   "when": "the melee connecting (only you hear it)",
+   "gain_db": -3.0,
+   "events": [
+    "sfx_1037001_v_impact_play"
+   ],
+   "replace": [
+    57257280,
+    179048792,
+    352332598
+   ]
+  },
+  {
+   "key": "Space",
+   "name": "Magnetic Descent start",
+   "sound": "ptt_start",
+   "sound_desc": "Discord: push to talk key pressed",
+   "when": "holding jump to float down",
+   "gain_db": -3.0,
+   "events": [
+    "sfx_1037001_space_drop_start_play"
+   ],
+   "replace": [
+    766089542,
+    230208889
+   ],
+   "mute": [
+    1069493481
+   ]
+  },
+  {
+   "key": "Space",
+   "name": "Magnetic Descent end",
+   "sound": "ptt_stop",
+   "sound_desc": "Discord: push to talk key released",
+   "when": "letting go of jump / landing",
+   "gain_db": -4.0,
+   "events": [
+    "sfx_1037001_space_drop_end_play"
+   ],
+   "replace": [
+    336935997,
+    550624621
+   ],
+   "mute": [
+    721068151
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Metallic Chaos",
+   "sound": "activity_launch",
+   "sound_desc": "Discord: an Activity starts in your voice channel",
+   "when": "activating the Scarlet Witch team-up",
+   "gain_db": 1.0,
+   "events": [
+    "sfx_1037001_103796_c_sp2_release_play"
+   ],
+   "replace": [
+    130414604
+   ],
+   "mute": [
+    298455029
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Chaos Greatsword swing",
+   "sound": "discodo",
+   "sound_desc": "Discord: Discodo easter egg (click the home button 16 times)",
+   "when": "each Chaos Greatsword swing",
+   "start": 0.0,
+   "end": 0.548,
+   "events": [
+    "sfx_1037001_103796_left_sp2_release_play",
+    "sfx_1037001_left_sp_release_play"
+   ],
+   "replace": [
+    333348180,
+    624822417,
+    785809848,
+    952502863,
+    732972703,
+    346255567,
+    587198414,
+    485798598,
+    173373115,
+    177383020,
+    783235589,
+    345156145
+   ],
+   "mute": [
+    551339182
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Chaos Greatsword hit",
+   "sound": "ddr-down",
+   "sound_desc": "Discord: down arrow key in the Ctrl+/ shortcuts popup (easter egg)",
+   "when": "a greatsword hit (you and the person hit hear it)",
+   "start": 0.0,
+   "end": 0.386,
+   "gain_db": -3.0,
+   "events": [
+    "sfx_1037001_103796_left_sp2_impact_play"
+   ],
+   "replace": [
+    875831178,
+    1049324739,
+    872954404
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Chaos barrage start",
+   "sound": "activity_user_join",
+   "sound_desc": "Discord: someone joins the Activity you're in",
+   "when": "starting the Chaos Greatsword barrage",
+   "events": [
+    "sfx_1037001_103798_right_sp2_start_play"
+   ],
+   "replace": [
+    914173106
+   ],
+   "mute": [
+    364840342
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Chaos barrage charging",
+   "sound": "stage_waiting",
+   "sound_desc": "Discord: Stage waiting music (a Stage that hasn't started yet)",
+   "when": "while the barrage charges (5.3 s)",
+   "start": 1.56,
+   "end": 6.95,
+   "gain_db": -6.0,
+   "events": [
+    "sfx_1037001_103798_right_sp2_charge_play"
+   ],
+   "replace": [
+    875445013
+   ],
+   "mute": [
+    858821728
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Chaos barrage sword",
+   "sound": "bit_message1",
+   "sound_desc": "Discord: message ping from the Retro sound pack (Nitro)",
+   "when": "every greatsword the barrage fires",
+   "start": 0.0,
+   "end": 0.32,
+   "gain_db": -3.0,
+   "events": [
+    "sfx_1037001_103798_right_sp2_release_play"
+   ],
+   "replace": [
+    763888591,
+    232257906,
+    802667734,
+    838342777
+   ],
+   "mute": [
+    175304791
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Chaos barrage mark",
+   "sound": "stream_user_left",
+   "sound_desc": "Discord: a viewer leaves the stream",
+   "when": "a mark being used up during the barrage (only you hear it)",
+   "gain_db": -3.0,
+   "events": [
+    "sfx_1037001_103798_right_sp2_lv2_play"
+   ],
+   "replace": [
+    140889722
+   ],
+   "mute": [
+    288768734
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Chaos barrage last mark",
+   "sound": "stream_ended",
+   "sound_desc": "Discord: a stream ends",
+   "when": "the last mark used up: the barrage is over (only you hear it)",
+   "gain_db": -1.0,
+   "events": [
+    "sfx_1037001_103798_right_sp2_lv3_play"
+   ],
+   "replace": [
+    449052143
+   ],
+   "mute": [
+    597088746
+   ]
+  },
+  {
+   "key": "X",
+   "name": "Magnetic Resonance",
+   "sound": "camera_on",
+   "sound_desc": "Discord: you turn your camera on",
+   "when": "casting the Emma Frost projection",
+   "events": [
+    "sfx_1037001_103703_x_sp2_release_play"
+   ],
+   "replace": [
+    575190500,
+    243220378,
+    700126007
+   ],
+   "mute": [
+    224925968
+   ]
+  },
+  {
+   "key": "X",
+   "name": "Magnetic Resonance end",
+   "sound": "camera_off",
+   "sound_desc": "Discord: you turn your camera off",
+   "when": "the projection being destroyed or recalled",
+   "events": [
+    "sfx_1037001_103703_x_sp2_end_play"
+   ],
+   "replace": [
+    918183650
+   ],
+   "mute": [
+    881088429
+   ]
+  },
+  {
+   "key": "Death",
+   "name": "Magneto dies",
+   "sound": "user_leave",
+   "sound_desc": "Discord: someone leaves your voice channel",
+   "when": "Magneto dying (the body fall of every death animation)",
+   "gain_db": -2.0,
+   "events": [
+    "sfx_1037001_fall_b_play",
+    "sfx_1037001_fall_f_play",
+    "sfx_1037001_fall_lr_play",
+    "sfx_1037001_fall_chain_play"
+   ],
+   "replace": [
+    753159889,
+    979157958,
+    962069597,
+    739333513,
+    753370453,
+    662868590,
+    830074040,
+    195962944
+   ]
+  }
+ ],
+ "optional_abilities": [
+  {
+   "key": "C",
+   "name": "Metallic Chaos timer",
+   "sound": "vibing_wumpus",
+   "sound_desc": "Discord: 'Vibe with Wumpus' lofi track (take a break screen)",
+   "when": "under the whole team-up (8.9 s, only you hear it)",
+   "gain_db": -10.0,
+   "start": 0.0,
+   "end": 8.78,
+   "events": [
+    "sfx_1037001_103796_c_sp2_count_play"
+   ],
+   "replace": [
+    321878151
+   ],
+   "mute": [
+    385566709
+   ],
+   "note": "Quiet lofi music under the team-up, cut on the beat before 8.8 s; the music stopping is your 'time's up'. Off because the vanilla timer hum is useful info. The rare ringtone (call_ringing_beat) works here too: only you hear this one, so nobody mixes it up with the ult."
+  }
+ ],
+ "max_rms_db": -3.0,
+ "limit_db": 12.0
+}

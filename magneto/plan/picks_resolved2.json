@@ -1,0 +1,2310 @@
+[
+ {
+  "key": "Left click",
+  "name": "Iron Volley",
+  "moment": "each volley fired",
+  "sound": "message1",
+  "sound_desc": "Discord: the normal message ping (DMs, @mentions)",
+  "when": "every Iron Volley shot (all 4 fire animations)",
+  "events": [
+   "sfx_1037001_left_release"
+  ],
+  "why": "Iron Volley is you spamming the chat, so every volley is the message ping. The most famous Discord sound goes on the button you press the most, and it's short enough to never smear on fast fire.",
+  "gain_note": "0 dB.",
+  "tech": "Enemies hear it 4 semitones lower: the enemy version plays the 3rd-person file at -400 cents and allies share that file at 0, so the pitch can only be right for one of them.",
+  "replace": [
+   98953984,
+   676297953,
+   764370507,
+   479678685,
+   445836432,
+   410457778
+  ],
+  "mute": [
+   118330070,
+   329894666,
+   674428057
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_left_release": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_left_release_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_left_release_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     -400
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.25673469387755105,
+  "_game_len": 0.25673469387755105,
+  "_file": "01 Left click - Iron Volley.wav",
+  "_trim": "full (0.43 s file)"
+ },
+ {
+  "key": "Left click",
+  "name": "Iron Volley burst",
+  "moment": "orbs burst at the end of each volley",
+  "sound": "bop_message1",
+  "sound_desc": "Discord: message ping from the Bop sound pack (Nitro)",
+  "when": "the orbs bursting after every volley",
+  "events": [
+   "sfx_1037001_left_explo"
+  ],
+  "why": "The message landing: one soft gliding 'bop' when the orbs pop, so a volley goes 'ping... bop'. It's a single soft note, so it doesn't put a second tune on every shot.",
+  "gain_note": "-6 dB, it follows every shot. The shared debris sound under it keeps playing.",
+  "tech": "Only the Magneto-only crack and body layers change; the debris tail is in 47+ other banks.",
+  "replace": [
+   519234152,
+   704507774,
+   38108524,
+   493442990,
+   116900639,
+   201666930,
+   886329776,
+   209397319,
+   872975912
+  ],
+  "mute": [
+   714468687,
+   807876712,
+   516010995
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": -6.0,
+  "_heard": {
+   "sfx_1037001_left_explo": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     112844167,
+     504880769,
+     656710496,
+     733048829,
+     910034133,
+     927480752
+    ]
+   },
+   "sfx_1037001_left_explo_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_left_explo_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     354583314,
+     535798729,
+     668521606,
+     684468234,
+     684848124,
+     778204359,
+     786330477,
+     871733646,
+     1002564826,
+     1031241716
+    ]
+   }
+  },
+  "_len": 0.19997732426303855,
+  "_game_len": 0.19997732426303855,
+  "_file": "02 Left click - Iron Volley burst.wav",
+  "_trim": "full (0.37 s file)"
+ },
+ {
+  "key": "Right click",
+  "name": "Mag-Cannon (1 ring)",
+  "moment": "fired with 1 ring",
+  "sound": "stream_user_joined",
+  "sound_desc": "Discord: a viewer joins the stream",
+  "when": "Mag-Cannon fired with 1 ring",
+  "events": [
+   "sfx_1037001_right_release1_play"
+  ],
+  "why": "Small shot, small stream sound: 'a viewer joined'. The 2 and 3 ring shots go live for real.",
+  "gain_note": "0 dB. Its close-up sweetener is muted.",
+  "tech": "",
+  "replace": [
+   557189761,
+   855322720,
+   624157209,
+   632144497
+  ],
+  "mute": [
+   838212171
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_right_release1_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_right_release1_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_right_release1_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.6023129251700681,
+  "_game_len": 0.6023129251700681,
+  "_file": "03 Right click - Mag-Cannon (1 ring).wav",
+  "_trim": "full (1.66 s file)"
+ },
+ {
+  "key": "Right click",
+  "name": "Mag-Cannon (2 rings)",
+  "moment": "fired with 2 rings",
+  "sound": "stream_started",
+  "sound_desc": "Discord: Go Live, a stream starts in your voice channel",
+  "when": "Mag-Cannon fired with 2 rings",
+  "events": [
+   "sfx_1037001_right_release2_play"
+  ],
+  "why": "The Go Live run (fast notes going up) cut after 4 notes: you're going live but the shot isn't full yet.",
+  "gain_note": "+1 dB (2 / 3 rings go +1 / +2 dB). Its close-up sweetener is muted.",
+  "tech": "",
+  "replace": [
+   338924989,
+   394458521,
+   413097967,
+   995260772
+  ],
+  "mute": [
+   1035550604
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "start": 0.0,
+  "end": 0.314,
+  "gain_db": 1.0,
+  "_heard": {
+   "sfx_1037001_right_release2_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_right_release2_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_right_release2_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.2793424036281179,
+  "_game_len": 0.2793424036281179,
+  "_file": "04 Right click - Mag-Cannon (2 rings).wav",
+  "_trim": "0.000-0.314 s"
+ },
+ {
+  "key": "Right click",
+  "name": "Mag-Cannon (3 rings, full)",
+  "moment": "fired with 3 rings, full",
+  "sound": "stream_started",
+  "sound_desc": "Discord: Go Live, a stream starts in your voice channel",
+  "when": "Mag-Cannon fired with 3 rings, full",
+  "events": [
+   "sfx_1037001_right_release3_play"
+  ],
+  "why": "The whole Go Live run, all 6 notes up to the top one: only the full-power shot finishes it.",
+  "gain_note": "+2 dB (2 / 3 rings go +1 / +2 dB). The vanilla metal sweetener under the full shot stays, it's shared with another hero.",
+  "tech": "The 1.2 s full-shot sweetener 575470063 is also in bnk_sfx_1029001, so it isn't touched.",
+  "replace": [
+   284941576,
+   153976229,
+   588610833,
+   579277169
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "start": null,
+  "end": null,
+  "gain_db": 2.0,
+  "_heard": {
+   "sfx_1037001_right_release3_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     575470063
+    ]
+   },
+   "sfx_1037001_right_release3_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_right_release3_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.7746258503401361,
+  "_game_len": 0.7746258503401361,
+  "_file": "05 Right click - Mag-Cannon (3 rings, full).wav",
+  "_trim": "full (1.79 s file)"
+ },
+ {
+  "key": "Right click",
+  "name": "Mag-Cannon hit",
+  "moment": "the cannon ball hits something",
+  "sound": "clip_save",
+  "sound_desc": "Discord: clip saved (you saved a clip or screenshot)",
+  "when": "a Mag-Cannon hit (also the full-energy hit)",
+  "events": [
+   "sfx_1037001_right_impact_play"
+  ],
+  "why": "Hit marker: 'clip saved', as in clip that. Only Magneto's own metal hit layer gets it, the shared surface impact stays, so a hit still sounds like a hit.",
+  "gain_note": "-2 dB. Only you hear it.",
+  "tech": "The 3 Magneto-only 1.17 s layer files (584910738, 148345098, 229168851) are replaced; the main sound of this event is the shared impact library and is never touched.",
+  "replace": [
+   584910738,
+   148345098,
+   229168851
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": -2.0,
+  "_heard": {
+   "sfx_1037001_right_impact_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     6994473,
+     22194394,
+     30438309,
+     48277740,
+     57990419,
+     63578698,
+     66468700,
+     71341730,
+     76422865,
+     81464708,
+     138842383,
+     149057653,
+     161284429,
+     180204040,
+     197288506,
+     204593348,
+     206807799,
+     225676845,
+     227951191,
+     261039515,
+     264171479,
+     275684369,
+     276208634,
+     302678721,
+     351805412,
+     362913441,
+     375355840,
+     385445044,
+     388235840,
+     388252896,
+     449392598,
+     450893621,
+     477135140,
+     519676297,
+     523000440,
+     523632291,
+     572452896,
+     581973135,
+     608901393,
+     620594194,
+     628597486,
+     657130193,
+     707247483,
+     733946899,
+     734055922,
+     746933909,
+     748387251,
+     774480001,
+     789633854,
+     807223145,
+     817614420,
+     827906173,
+     847390072,
+     859796547,
+     873064929,
+     874767432,
+     880337453,
+     894209781,
+     916645145,
+     928183721,
+     932535078,
+     935443813,
+     945005007,
+     958928314,
+     1003609528,
+     1035032565,
+     1035948081,
+     1066203739
+    ]
+   }
+  },
+  "_len": 0.3982766439909297,
+  "_game_len": 0.3982766439909297,
+  "_file": "06 Right click - Mag-Cannon hit.wav",
+  "_trim": "full (1.04 s file)"
+ },
+ {
+  "key": "Right click",
+  "name": "Mag-Cannon knock-back",
+  "moment": "full-ring hit knocks the target back",
+  "sound": "soundboard_airhorn",
+  "sound_desc": "Discord: airhorn from the soundboard",
+  "when": "a full-ring Mag-Cannon knocks someone back (only you and the person hit hear it)",
+  "events": [
+   "sfx_1037001_right_release_debuff_play"
+  ],
+  "why": "The big play gets the airhorn. You send someone flying across the map and both of you hear it.",
+  "gain_note": "-2 dB, it's a long solid blast so it sits a bit lower.",
+  "tech": "The game plays this event at +2/+3 dB; the clip is leveled down to match.",
+  "replace": [
+   455200848,
+   332010919,
+   527023
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "verifier fix (soundboard)",
+  "prev_note": "",
+  "gain_db": -2.0,
+  "_heard": {
+   "sfx_1037001_right_release_debuff_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_right_release_debuff_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 1.732358276643991,
+  "_game_len": 1.732358276643991,
+  "_file": "07 Right click - Mag-Cannon knock-back.wav",
+  "_trim": "full (2.89 s file)"
+ },
+ {
+  "key": "Left Shift",
+  "name": "Metallic Curtain up",
+  "moment": "curtain raised",
+  "sound": "deafen",
+  "sound_desc": "Discord: you deafen yourself",
+  "when": "raising the Metallic Curtain",
+  "events": [
+   "sfx_1037001_shift_release_play"
+  ],
+  "why": "Deafen: the wall goes up and nothing they send gets through to you.",
+  "gain_note": "0 dB. The close-up metal sweetener under it is muted.",
+  "tech": "",
+  "replace": [
+   170644895,
+   511259730,
+   697932823
+  ],
+  "mute": [
+   975807859
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_shift_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_shift_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_shift_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.5269160997732426,
+  "_game_len": 0.5269160997732426,
+  "_file": "08 Left Shift - Metallic Curtain up.wav",
+  "_trim": "full (0.80 s file)"
+ },
+ {
+  "key": "Left Shift",
+  "name": "Metallic Curtain blocks a shot",
+  "moment": "each shot the curtain stops",
+  "sound": "mention2",
+  "sound_desc": "Discord: the old @mention ping (Discord doesn't use it any more)",
+  "when": "each projectile the curtain stops, can be several a second",
+  "events": [
+   "sfx_1037001_shift_impact_self_play"
+  ],
+  "why": "Every blocked shot is a tiny bright 'tink' from the old @mention ping, like a ricochet. Shortest and quietest pick because it can fire several times a second.",
+  "gain_note": "-8 dB, only the start of the file: a quiet trill and one bright note, about 0.12 s.",
+  "tech": "Some of the tink files are shared between your version (pitched +2 semitones by the game) and everyone else's (no pitch), so other people hear some of the tinks 2 semitones lower.",
+  "replace": [
+   76604095,
+   385654335,
+   1012637508
+  ],
+  "mute": [
+   555958198
+  ],
+  "mute_events": [],
+  "src": "draft 2 (cut fixed)",
+  "prev_note": "",
+  "start": 0.0,
+  "end": 0.15,
+  "gain_db": -8.0,
+  "_heard": {
+   "sfx_1037001_shift_impact_self_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_shift_impact_self_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     -200,
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_shift_impact_self_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     -200,
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.11208616780045351,
+  "_game_len": 0.11208616780045351,
+  "_file": "09 Left Shift - Metallic Curtain blocks a shot.wav",
+  "_trim": "0.000-0.150 s"
+ },
+ {
+  "key": "Left Shift",
+  "name": "Metallic Curtain down",
+  "moment": "curtain drops / ends",
+  "sound": "undeafen",
+  "sound_desc": "Discord: you undeafen",
+  "when": "the Metallic Curtain ending",
+  "events": [
+   "sfx_1037001_shift_end_play"
+  ],
+  "why": "Undeafen: the wall is gone, you can hear (and get hit by) everything again.",
+  "gain_note": "0 dB. The sweetener under it is muted.",
+  "tech": "",
+  "replace": [
+   905786739,
+   927977726
+  ],
+  "mute": [
+   773411659
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_shift_end_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_shift_end_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_shift_end_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.6436507936507937,
+  "_game_len": 0.6436507936507937,
+  "_file": "10 Left Shift - Metallic Curtain down.wav",
+  "_trim": "full (0.88 s file)"
+ },
+ {
+  "key": "E and F",
+  "name": "Bulwark shield up",
+  "moment": "shield appears on the target",
+  "sound": "mute",
+  "sound_desc": "Discord: you mute your mic",
+  "when": "Metal Bulwark (E, on an ally) or Iron Bulwark (F, on himself) appearing",
+  "events": [
+   "sfx_1037001_e_child_start_play"
+  ],
+  "why": "The shield mutes the damage. E and F both use this moment. It goes on 'shield appears' and not on the cast, because the cast sound is shared with Rogue (she can copy Iron Bulwark).",
+  "gain_note": "0 dB.",
+  "tech": "Every file of e_release_play is also in Rogue's bank. The game plays this event at +2 dB for you, -20 for allies, -13 for enemies; the clip is leveled to your version.",
+  "replace": [
+   133538675,
+   895386776
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_e_child_start_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_e_child_start_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_e_child_start_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.3920861678004535,
+  "_game_len": 0.3920861678004535,
+  "_file": "11 E and F - Bulwark shield up.wav",
+  "_trim": "full (0.54 s file)"
+ },
+ {
+  "key": "E and F",
+  "name": "Bulwark shield down",
+  "moment": "shield breaks / expires",
+  "sound": "unmute",
+  "sound_desc": "Discord: you unmute your mic",
+  "when": "the Bulwark shield breaking or running out",
+  "events": [
+   "sfx_1037001_e_child_end_play"
+  ],
+  "why": "Unmute: the damage can reach them again.",
+  "gain_note": "0 dB. The sweetener under it is muted.",
+  "tech": "",
+  "replace": [
+   596234420,
+   73740529,
+   972957843
+  ],
+  "mute": [
+   613741789
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_e_child_end_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_e_child_end_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_e_child_end_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.40859410430839005,
+  "_game_len": 0.40859410430839005,
+  "_file": "12 E and F - Bulwark shield down.wav",
+  "_trim": "full (0.54 s file)"
+ },
+ {
+  "key": "Passive",
+  "name": "Iron ring 1",
+  "moment": "1st iron ring forms",
+  "sound": "mention3",
+  "sound_desc": "Discord: the test ping when you switch your headset or mic",
+  "when": "the 1st iron ring forming",
+  "events": [
+   "sfx_1037001_passive_absorb1_play"
+  ],
+  "why": "One ping of the headset test ping, so the rings count out loud: ring 1 = 1 ping.",
+  "gain_note": "-2 dB (rings go -2 / -1 / +1 dB). Only you and enemies hear ring sounds, the game mutes them for allies.",
+  "tech": "Its vanilla ring layer is muted, the battle-UI tick under it stays (it's in bnk_ui_battle). The file's 3rd ping is about 15 dB quieter than the first two, so every ring uses the 2nd ping.",
+  "replace": [
+   229924513,
+   220774048
+  ],
+  "mute": [
+   130618370
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "start": 0.137,
+  "end": 0.26,
+  "gain_db": -2.0,
+  "_heard": {
+   "sfx_1037001_passive_absorb1_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     7531427,
+     250143135,
+     916066880
+    ]
+   },
+   "sfx_1037001_passive_absorb1_play_p2": {
+    "groups": 1,
+    "muted_by_mix": true,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_passive_absorb1_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.12301587301587301,
+  "_game_len": 0.12301587301587301,
+  "_file": "13 Passive - Iron ring 1.wav",
+  "_trim": "0.137-0.260 s"
+ },
+ {
+  "key": "Passive",
+  "name": "Iron ring 2",
+  "moment": "2nd iron ring forms",
+  "sound": "mention3",
+  "sound_desc": "Discord: the test ping when you switch your headset or mic",
+  "when": "the 2nd iron ring forming",
+  "events": [
+   "sfx_1037001_passive_absorb2_play"
+  ],
+  "why": "Ring 2 = the same ping twice, 1 dB up.",
+  "gain_note": "-1 dB (rings go -2 / -1 / +1 dB), the ping 2 times, 0.12 s apart. Only you and enemies hear ring sounds, the game mutes them for allies.",
+  "tech": "Its vanilla ring layer is muted, the battle-UI tick under it stays (it's in bnk_ui_battle). The file's 3rd ping is about 15 dB quieter than the first two, so every ring uses the 2nd ping.",
+  "replace": [
+   504996263
+  ],
+  "mute": [
+   138680307
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "start": 0.137,
+  "end": 0.26,
+  "gain_db": -1.0,
+  "repeat": 2,
+  "every": 0.12,
+  "_heard": {
+   "sfx_1037001_passive_absorb2_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     7531427,
+     250143135,
+     916066880
+    ]
+   },
+   "sfx_1037001_passive_absorb2_play_p2": {
+    "groups": 1,
+    "muted_by_mix": true,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_passive_absorb2_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.24301587301587302,
+  "_game_len": 0.24301587301587302,
+  "_file": "14 Passive - Iron ring 2.wav",
+  "_trim": "0.137-0.260 s"
+ },
+ {
+  "key": "Passive",
+  "name": "Iron ring 3 (full)",
+  "moment": "3rd iron ring forms",
+  "sound": "mention3",
+  "sound_desc": "Discord: the test ping when you switch your headset or mic",
+  "when": "the 3rd iron ring forming: Mag-Cannon is at full power",
+  "events": [
+   "sfx_1037001_passive_absorb3_play"
+  ],
+  "why": "Ring 3 = the same ping three times: full Mag-Cannon is ready.",
+  "gain_note": "+1 dB (rings go -2 / -1 / +1 dB), the ping 3 times, 0.12 s apart. Only you and enemies hear ring sounds, the game mutes them for allies.",
+  "tech": "Its vanilla ring layer is muted, the battle-UI tick under it stays (it's in bnk_ui_battle). The file's 3rd ping is about 15 dB quieter than the first two, so every ring uses the 2nd ping.",
+  "replace": [
+   1023816058,
+   558616184
+  ],
+  "mute": [
+   668811517
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "start": 0.137,
+  "end": 0.26,
+  "gain_db": 1.0,
+  "repeat": 3,
+  "every": 0.12,
+  "_heard": {
+   "sfx_1037001_passive_absorb3_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     282003083
+    ]
+   },
+   "sfx_1037001_passive_absorb3_play_p2": {
+    "groups": 1,
+    "muted_by_mix": true,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_passive_absorb3_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.363015873015873,
+  "_game_len": 0.363015873015873,
+  "_file": "15 Passive - Iron ring 3 (full).wav",
+  "_trim": "0.137-0.260 s"
+ },
+ {
+  "key": "R",
+  "name": "Reload",
+  "moment": "reload",
+  "sound": "asmr_message1",
+  "sound_desc": "Discord: message ping from the ASMR sound pack (Nitro)",
+  "when": "reloading Iron Volley",
+  "events": [
+   "sfx_1037001_r_release_play"
+  ],
+  "why": "Two soft clicky taps from the ASMR pack's message ping. It has no tune, so a reload sounds like a real reload and never gets mixed up with a ping or the Go Live run.",
+  "gain_note": "-2 dB, the last 2 taps. The long sweetener and the three ring-spin sounds are muted so the reload is just the taps.",
+  "tech": "Cut from 0.33 s. Mutes r_absorb1-3 too.",
+  "replace": [
+   169044706,
+   586774980,
+   1049007812
+  ],
+  "mute": [
+   1053289654
+  ],
+  "mute_events": [
+   "sfx_1037001_r_absorb1_play",
+   "sfx_1037001_r_absorb2_play",
+   "sfx_1037001_r_absorb3_play"
+  ],
+  "src": "draft 2",
+  "prev_note": "",
+  "start": 0.33,
+  "gain_db": -2.0,
+  "_heard": {
+   "sfx_1037001_r_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_r_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_r_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.6927437641723356,
+  "_game_len": 0.6927437641723356,
+  "_file": "16 R - Reload.wav",
+  "_trim": "from 0.330 s to the end (1.09 s file)"
+ },
+ {
+  "key": "Q",
+  "name": "Meteor M cast",
+  "moment": "ult cast",
+  "sound": "call_calling",
+  "sound_desc": "Discord: outgoing call, waiting for them to pick up",
+  "when": "pressing Q (with 'Fear Magneto!')",
+  "events": [
+   "sfx_1037001_q_start"
+  ],
+  "why": "Pressing Q is hitting the call button: the first 'boo-doo-doo' of the outgoing calling tone. Only the first half, so the ringtone can start right after it.",
+  "gain_note": "+2 dB, cut after the first phrase. The vanilla swell under it is muted.",
+  "tech": "",
+  "replace": [
+   361019606,
+   746053380,
+   171598121
+  ],
+  "mute": [
+   20471252
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "start": 0.0,
+  "end": 0.95,
+  "gain_db": 2.0,
+  "_heard": {
+   "sfx_1037001_q_start": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_start_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_start_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.6782766439909297,
+  "_game_len": 0.6782766439909297,
+  "_file": "17 Q - Meteor M cast.wav",
+  "_trim": "0.000-0.950 s"
+ },
+ {
+  "key": "Q",
+  "name": "Meteor M forming",
+  "moment": "meteor forming, until it's thrown",
+  "sound": "call_ringing",
+  "sound_desc": "Discord: incoming call ringtone",
+  "when": "while the meteor forms, until it's thrown",
+  "events": [
+   "sfx_1037001_q_child_start_play"
+  ],
+  "why": "THE Discord ringtone while the meteor forms, so everyone around hears 'you're getting called' = ult coming. Throwing the meteor stops it (the game already does that), so throwing = picking up.",
+  "gain_note": "0 dB, full level on purpose, it's the biggest warning in the kit. It starts 0.5 s after the forming starts so the calling tone gets out first. The vanilla rumble layer is muted.",
+  "tech": "q_release has stop actions (0x103) on every forming target: 111860807, 507761464, 524972516 (you), 551659154 (allies), 125012237 (enemies). q_child_damage_play only has play actions.",
+  "replace": [
+   884048673,
+   587586351,
+   586936657,
+   331851981
+  ],
+  "mute": [
+   291065174
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": " (full ring, cut short when you throw)",
+  "repeat": 1,
+  "every": 5.369,
+  "lead_in": 0.5,
+  "_heard": {
+   "sfx_1037001_q_child_start_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_child_start_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_child_start_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 5.32374149659864,
+  "_game_len": 5.82374149659864,
+  "_file": "18 Q - Meteor M forming (full ring, cut short when you throw).wav",
+  "_trim": "full (5.37 s file)"
+ },
+ {
+  "key": "Q",
+  "name": "Meteor absorbs a shot",
+  "moment": "each shot the meteor swallows",
+  "sound": "message2",
+  "sound_desc": "Discord: 'friend started playing a game' notification",
+  "when": "each projectile the meteor swallows",
+  "events": [
+   "sfx_1037001_q_child_absorb_play"
+  ],
+  "why": "Every bullet the meteor eats is a message landing while the phone rings: one low note (the ringtone's key), the first note of the 'friend started playing' ping. Quiet, it can fire a lot.",
+  "gain_note": "-8 dB, first note only. The shared impact thunks under it stay.",
+  "tech": "Only the 15 Magneto-only zap files get the clip. The one Magneto-only extra sits in the same random pick as the 3 shared thunks, so it isn't muted (1 absorb in 4 would lose its thunk).",
+  "replace": [
+   428774173,
+   17622980,
+   961491327,
+   931048443,
+   640286366,
+   844775027,
+   167770174,
+   296272772,
+   906615086,
+   802404639,
+   21157192,
+   1006170430,
+   209942967,
+   35850007,
+   101947920
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "start": 0.0,
+  "end": 0.141,
+  "gain_db": -8.0,
+  "_heard": {
+   "sfx_1037001_q_child_absorb_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     746933909,
+     789633854,
+     1019586730,
+     1035032565
+    ]
+   },
+   "sfx_1037001_q_child_absorb_play_p2": {
+    "groups": 1,
+    "muted_by_mix": true,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     746933909,
+     789633854,
+     958928314,
+     1035032565
+    ]
+   },
+   "sfx_1037001_q_child_absorb_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     746933909,
+     789633854,
+     958928314,
+     1035032565
+    ]
+   }
+  },
+  "_len": 0.10458049886621315,
+  "_game_len": 0.10458049886621315,
+  "_file": "19 Q - Meteor absorbs a shot.wav",
+  "_trim": "0.000-0.141 s"
+ },
+ {
+  "key": "Q",
+  "name": "Meteor M thrown",
+  "moment": "meteor thrown",
+  "sound": "user_join",
+  "sound_desc": "Discord: someone joins your voice channel",
+  "when": "throwing the meteor",
+  "events": [
+   "sfx_1037001_q_release"
+  ],
+  "why": "They picked up. In a real call the join sound plays the moment the other side answers, and the ringing stops right before it.",
+  "gain_note": "+1 dB. The game plays two throw sounds at once, so only one gets the clip and the other is muted, otherwise everyone would hear it doubled.",
+  "tech": "Close-up set 744393175/143313839/824079349 gets the clip, 3rd-person set 831444564/1000982248/234569062 and the 0.7 s sweetener 841967870 are muted (the two sets are crossed between you and everyone else).",
+  "replace": [
+   744393175,
+   143313839,
+   824079349
+  ],
+  "mute": [
+   831444564,
+   1000982248,
+   234569062,
+   841967870
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": 1.0,
+  "_heard": {
+   "sfx_1037001_q_release": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_release_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_release_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.7313832199546485,
+  "_game_len": 0.7313832199546485,
+  "_file": "20 Q - Meteor M thrown.wav",
+  "_trim": "full (1.16 s file)"
+ },
+ {
+  "key": "Q",
+  "name": "Meteor M impact",
+  "moment": "meteor impact",
+  "sound": "disconnect",
+  "sound_desc": "Discord: you leave or drop from voice",
+  "when": "the meteor landing",
+  "events": [
+   "sfx_1037001_q_explo"
+  ],
+  "why": "Then you hang up on everyone it hits.",
+  "gain_note": "+2 dB. The big shared explosion under it keeps playing. Everyone hears the clip once.",
+  "tech": "Only the set every version plays (465763209, 659074377, 75594779) gets the clip. Your 1.2 s main crack 414507073 and the ally-only set 101597121/508910138/191546796 are muted with the other Magneto-only layers, so nobody hears two copies. Allies hear it 1.5 semitones lower (the game's -150 cents on their version, shared file). The 4-6 s explosion tails are in 20-32 other banks and stay.",
+  "replace": [
+   465763209,
+   659074377,
+   75594779
+  ],
+  "mute": [
+   414507073,
+   101597121,
+   508910138,
+   191546796,
+   777487411,
+   652130120,
+   736537024,
+   185591780,
+   374170498,
+   396341579,
+   192185433,
+   368019844,
+   121340184
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "gain_db": 2.0,
+  "_heard": {
+   "sfx_1037001_q_explo": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     279090214,
+     370113751,
+     442025624,
+     483180774,
+     615703899,
+     821355564,
+     845940028,
+     990853608
+    ]
+   },
+   "sfx_1037001_q_explo_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     -150
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_explo_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     370113751,
+     442025624,
+     638679166,
+     821355564,
+     881065515,
+     931546114,
+     990853608,
+     990862936
+    ]
+   }
+  },
+  "_len": 0.7447392290249433,
+  "_game_len": 0.7447392290249433,
+  "_file": "21 Q - Meteor M impact.wav",
+  "_trim": "full (1.29 s file)"
+ },
+ {
+  "key": "Q",
+  "name": "Meteor M shattered",
+  "moment": "meteor shattered before it's thrown",
+  "sound": "soundboard_sad_horn",
+  "sound_desc": "Discord: sad horn (sad trombone) from the soundboard",
+  "when": "the meteor breaking (overload or destroyed) before it's thrown",
+  "events": [
+   "sfx_1037001_q_child_damage_play"
+  ],
+  "why": "They broke your ult before you could throw it: sad horn from the soundboard.",
+  "gain_note": "0 dB. The vanilla crash layer is muted.",
+  "tech": "",
+  "replace": [
+   566397846,
+   799871272,
+   369630885
+  ],
+  "mute": [
+   154748305
+  ],
+  "mute_events": [],
+  "src": "verifier fix (soundboard)",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_q_child_damage_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_child_damage_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_q_child_damage_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 2.510113378684807,
+  "_game_len": 2.510113378684807,
+  "_file": "22 Q - Meteor M shattered.wav",
+  "_trim": "full (2.81 s file)"
+ },
+ {
+  "key": "V",
+  "name": "Melee",
+  "moment": "sword swing",
+  "sound": "lofi_message1",
+  "sound_desc": "Discord: message ping from the Lofi sound pack (Nitro)",
+  "when": "the quick melee swing",
+  "events": [
+   "sfx_1037001_v_release_play"
+  ],
+  "why": "A very high flick falling onto a bell, about as close to a blade 'shing' as Discord gets. It's the Lofi pack's message ping.",
+  "gain_note": "0 dB. The swish sweetener is muted.",
+  "tech": "",
+  "replace": [
+   249178863,
+   139258106,
+   881172143
+  ],
+  "mute": [
+   858350777
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_v_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_v_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_v_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.7050793650793651,
+  "_game_len": 0.7050793650793651,
+  "_file": "23 V - Melee.wav",
+  "_trim": "full (0.83 s file)"
+ },
+ {
+  "key": "V",
+  "name": "Melee hit",
+  "moment": "melee connects (only you hear it)",
+  "sound": "soundboard_quack",
+  "sound_desc": "Discord: quack from the soundboard",
+  "when": "the melee connecting (only you hear it)",
+  "events": [
+   "sfx_1037001_v_impact_play"
+  ],
+  "why": "Bonk them and they quack. The soundboard quack is short, so it works as a hit marker.",
+  "gain_note": "-3 dB.",
+  "tech": "",
+  "replace": [
+   57257280,
+   179048792,
+   352332598
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "verifier fix (soundboard)",
+  "prev_note": "",
+  "gain_db": -3.0,
+  "_heard": {
+   "sfx_1037001_v_impact_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.2728344671201814,
+  "_game_len": 0.2728344671201814,
+  "_file": "24 V - Melee hit.wav",
+  "_trim": "full (1.08 s file)"
+ },
+ {
+  "key": "Space",
+  "name": "Magnetic Descent start",
+  "moment": "hold jump, slow fall starts",
+  "sound": "ptt_start",
+  "sound_desc": "Discord: push to talk key pressed",
+  "when": "holding jump to float down",
+  "events": [
+   "sfx_1037001_space_drop_start_play"
+  ],
+  "why": "Holding jump to float is holding your push to talk key: the PTT click when you press it.",
+  "gain_note": "-3 dB. Only the magnetic swell gets it, the cloth and air whoosh stays.",
+  "tech": "Replaces the swell 766089542/230208889, mutes the 0.6 s extra layer 1069493481.",
+  "replace": [
+   766089542,
+   230208889
+  ],
+  "mute": [
+   1069493481
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": -3.0,
+  "_heard": {
+   "sfx_1037001_space_drop_start_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     66498376,
+     128148394,
+     311334002,
+     643873729,
+     826499681
+    ]
+   },
+   "sfx_1037001_space_drop_start_play_p2": {
+    "groups": 1,
+    "muted_by_mix": true,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     66498376,
+     128148394,
+     311334002,
+     643873729,
+     826499681
+    ]
+   },
+   "sfx_1037001_space_drop_start_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     66498376,
+     128148394,
+     311334002,
+     643873729,
+     826499681
+    ]
+   }
+  },
+  "_len": 0.08750566893424036,
+  "_game_len": 0.08750566893424036,
+  "_file": "25 Space - Magnetic Descent start.wav",
+  "_trim": "full (0.09 s file)"
+ },
+ {
+  "key": "Space",
+  "name": "Magnetic Descent end",
+  "moment": "let go of jump / land",
+  "sound": "ptt_stop",
+  "sound_desc": "Discord: push to talk key released",
+  "when": "letting go of jump / landing",
+  "events": [
+   "sfx_1037001_space_drop_end_play"
+  ],
+  "why": "Letting go = releasing push to talk: the lower click out.",
+  "gain_note": "-4 dB. Only the hum release gets it, the cloth sound stays.",
+  "tech": "Replaces the 2 s hum release 336935997/550624621, mutes the 0.4 s extra layer 721068151.",
+  "replace": [
+   336935997,
+   550624621
+  ],
+  "mute": [
+   721068151
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": -4.0,
+  "_heard": {
+   "sfx_1037001_space_drop_end_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     62904903,
+     176697358,
+     293389675,
+     536015436,
+     970632275
+    ]
+   },
+   "sfx_1037001_space_drop_end_play_p2": {
+    "groups": 1,
+    "muted_by_mix": true,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     62904903,
+     176697358,
+     293389675,
+     536015436,
+     970632275
+    ]
+   },
+   "sfx_1037001_space_drop_end_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": [
+     62904903,
+     176697358,
+     293389675,
+     536015436,
+     970632275
+    ]
+   }
+  },
+  "_len": 0.10825396825396826,
+  "_game_len": 0.10825396825396826,
+  "_file": "26 Space - Magnetic Descent end.wav",
+  "_trim": "full (0.12 s file)"
+ },
+ {
+  "key": "C",
+  "name": "Metallic Chaos",
+  "moment": "team-up activated",
+  "sound": "activity_launch",
+  "sound_desc": "Discord: an Activity starts in your voice channel",
+  "when": "activating the Scarlet Witch team-up",
+  "events": [
+   "sfx_1037001_103796_c_sp2_release_play"
+  ],
+  "why": "You and Wanda start an Activity together: the rising 'Activity started' run.",
+  "gain_note": "+1 dB. The sweetener is muted.",
+  "tech": "",
+  "replace": [
+   130414604
+  ],
+  "mute": [
+   298455029
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": 1.0,
+  "_heard": {
+   "sfx_1037001_103796_c_sp2_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103796_c_sp2_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103796_c_sp2_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.7603401360544217,
+  "_game_len": 0.7603401360544217,
+  "_file": "27 C - Metallic Chaos.wav",
+  "_trim": "full (1.55 s file)"
+ },
+ {
+  "key": "C",
+  "name": "Chaos Greatsword swing",
+  "moment": "greatsword swing (left click in the team-up)",
+  "sound": "discodo",
+  "sound_desc": "Discord: Discodo easter egg (click the home button 16 times)",
+  "when": "each Chaos Greatsword swing",
+  "events": [
+   "sfx_1037001_103796_left_sp2_release_play",
+   "sfx_1037001_left_sp_release_play"
+  ],
+  "why": "The Discodo easter egg chime. Turn Discodo on in Discord and this becomes your message ping, so it's the team-up version of Iron Volley's ping (both are left click), but sparkly so the two never mix.",
+  "gain_note": "0 dB, cut after 4 notes. The sweetener is muted.",
+  "tech": "The old swing event left_sp_release_play is in too because costumes 1037100/101/500/501 still use it.",
+  "replace": [
+   333348180,
+   624822417,
+   785809848,
+   952502863,
+   732972703,
+   346255567,
+   587198414,
+   485798598,
+   173373115,
+   177383020,
+   783235589,
+   345156145
+  ],
+  "mute": [
+   551339182
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "start": 0.0,
+  "end": 0.548,
+  "_heard": {
+   "sfx_1037001_103796_left_sp2_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103796_left_sp2_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103796_left_sp2_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_left_sp_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_left_sp_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_left_sp_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.513061224489796,
+  "_game_len": 0.513061224489796,
+  "_file": "28 C - Chaos Greatsword swing.wav",
+  "_trim": "0.000-0.548 s"
+ },
+ {
+  "key": "C",
+  "name": "Chaos Greatsword hit",
+  "moment": "greatsword connects",
+  "sound": "ddr-down",
+  "sound_desc": "Discord: down arrow key in the Ctrl+/ shortcuts popup (easter egg)",
+  "when": "a greatsword hit (you and the person hit hear it)",
+  "events": [
+   "sfx_1037001_103796_left_sp2_impact_play"
+  ],
+  "why": "A little arcade beep from Discord's hidden Ctrl+/ arrow key game, as a hit marker.",
+  "gain_note": "-3 dB, cut before its echo.",
+  "tech": "",
+  "replace": [
+   875831178,
+   1049324739,
+   872954404
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "start": 0.0,
+  "end": 0.386,
+  "gain_db": -3.0,
+  "_heard": {
+   "sfx_1037001_103796_left_sp2_impact_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103796_left_sp2_impact_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.3736734693877551,
+  "_game_len": 0.3736734693877551,
+  "_file": "29 C - Chaos Greatsword hit.wav",
+  "_trim": "0.000-0.386 s"
+ },
+ {
+  "key": "C",
+  "name": "Chaos barrage start",
+  "moment": "barrage starts (right click in the team-up)",
+  "sound": "activity_user_join",
+  "sound_desc": "Discord: someone joins the Activity you're in",
+  "when": "starting the Chaos Greatsword barrage",
+  "events": [
+   "sfx_1037001_103798_right_sp2_start_play"
+  ],
+  "why": "The swords join in: 'someone joined the Activity', same family as the team-up start.",
+  "gain_note": "0 dB. The sweetener is muted.",
+  "tech": "",
+  "replace": [
+   914173106
+  ],
+  "mute": [
+   364840342
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_103798_right_sp2_start_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103798_right_sp2_start_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103798_right_sp2_start_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.6118367346938776,
+  "_game_len": 0.6118367346938776,
+  "_file": "30 C - Chaos barrage start.wav",
+  "_trim": "full (1.03 s file)"
+ },
+ {
+  "key": "C",
+  "name": "Chaos barrage charging",
+  "moment": "barrage charging (5.3 s, everyone hears it)",
+  "sound": "stage_waiting",
+  "sound_desc": "Discord: Stage waiting music (a Stage that hasn't started yet)",
+  "when": "while the barrage charges (5.3 s)",
+  "events": [
+   "sfx_1037001_103798_right_sp2_charge_play"
+  ],
+  "why": "The Stage waiting music: the drums at the start of the track, while you wait for the show to start. Cut right before the tune kicks in, so the barrage is the drop.",
+  "gain_note": "-6 dB, the drums and the fill, about the length of the vanilla charge. Its vanilla layer is muted.",
+  "tech": "Cut 1.56-6.95 s of the 92.5 s track: first kick at 1.6 s, the fill ends at 6.85 s, the melody starts at 7.15 s. The clip is 5.39 s against the 5.31 s vanilla charge.",
+  "replace": [
+   875445013
+  ],
+  "mute": [
+   858821728
+  ],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "start": 1.56,
+  "end": 6.95,
+  "gain_db": -6.0,
+  "_heard": {
+   "sfx_1037001_103798_right_sp2_charge_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103798_right_sp2_charge_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103798_right_sp2_charge_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 5.39,
+  "_game_len": 5.39,
+  "_file": "31 C - Chaos barrage charging.wav",
+  "_trim": "1.560-6.950 s"
+ },
+ {
+  "key": "C",
+  "name": "Chaos barrage sword",
+  "moment": "barrage: each sword fired",
+  "sound": "bit_message1",
+  "sound_desc": "Discord: message ping from the Retro sound pack (Nitro)",
+  "when": "every greatsword the barrage fires",
+  "events": [
+   "sfx_1037001_103798_right_sp2_release_play"
+  ],
+  "why": "A short retro 'pew' for every sword. It's the Retro pack's message ping, cut before its low thump so it's short enough to repeat every tick.",
+  "gain_note": "-3 dB. The loud sweetener is muted.",
+  "tech": "",
+  "replace": [
+   763888591,
+   232257906,
+   802667734,
+   838342777
+  ],
+  "mute": [
+   175304791
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "start": 0.0,
+  "end": 0.32,
+  "gain_db": -3.0,
+  "_heard": {
+   "sfx_1037001_103798_right_sp2_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103798_right_sp2_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103798_right_sp2_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.28868480725623585,
+  "_game_len": 0.28868480725623585,
+  "_file": "32 C - Chaos barrage sword.wav",
+  "_trim": "0.000-0.320 s"
+ },
+ {
+  "key": "C",
+  "name": "Chaos barrage mark",
+  "moment": "barrage: a mark is burned (only you hear it)",
+  "sound": "stream_user_left",
+  "sound_desc": "Discord: a viewer leaves the stream",
+  "when": "a mark being used up during the barrage (only you hear it)",
+  "events": [
+   "sfx_1037001_103798_right_sp2_lv2_play"
+  ],
+  "why": "Each mark the barrage burns is a viewer leaving the stream.",
+  "gain_note": "-3 dB. Its layer is muted.",
+  "tech": "",
+  "replace": [
+   140889722
+  ],
+  "mute": [
+   288768734
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": -3.0,
+  "_heard": {
+   "sfx_1037001_103798_right_sp2_lv2_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.5117687074829932,
+  "_game_len": 0.5117687074829932,
+  "_file": "33 C - Chaos barrage mark.wav",
+  "_trim": "full (1.66 s file)"
+ },
+ {
+  "key": "C",
+  "name": "Chaos barrage last mark",
+  "moment": "barrage: the last mark is burned (only you hear it)",
+  "sound": "stream_ended",
+  "sound_desc": "Discord: a stream ends",
+  "when": "the last mark used up: the barrage is over (only you hear it)",
+  "events": [
+   "sfx_1037001_103798_right_sp2_lv3_play"
+  ],
+  "why": "Last mark gone: stream over.",
+  "gain_note": "-1 dB. Its layer is muted.",
+  "tech": "",
+  "replace": [
+   449052143
+  ],
+  "mute": [
+   597088746
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "gain_db": -1.0,
+  "_heard": {
+   "sfx_1037001_103798_right_sp2_lv3_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.5145578231292517,
+  "_game_len": 0.5145578231292517,
+  "_file": "34 C - Chaos barrage last mark.wav",
+  "_trim": "full (1.66 s file)"
+ },
+ {
+  "key": "X",
+  "name": "Magnetic Resonance",
+  "moment": "projection cast",
+  "sound": "camera_on",
+  "sound_desc": "Discord: you turn your camera on",
+  "when": "casting the Emma Frost projection",
+  "events": [
+   "sfx_1037001_103703_x_sp2_release_play"
+  ],
+  "why": "The projection is a live video of you running around somewhere else: camera on.",
+  "gain_note": "0 dB. The ally version's layer is muted.",
+  "tech": "",
+  "replace": [
+   575190500,
+   243220378,
+   700126007
+  ],
+  "mute": [
+   224925968
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_103703_x_sp2_release_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103703_x_sp2_release_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103703_x_sp2_release_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.3840136054421769,
+  "_game_len": 0.3840136054421769,
+  "_file": "35 X - Magnetic Resonance.wav",
+  "_trim": "full (0.98 s file)"
+ },
+ {
+  "key": "X",
+  "name": "Magnetic Resonance end",
+  "moment": "projection destroyed or recalled",
+  "sound": "camera_off",
+  "sound_desc": "Discord: you turn your camera off",
+  "when": "the projection being destroyed or recalled",
+  "events": [
+   "sfx_1037001_103703_x_sp2_end_play"
+  ],
+  "why": "Camera off: the copy is gone. Allies don't hear this one, the game mutes it for them.",
+  "gain_note": "0 dB. The sweetener is muted.",
+  "tech": "",
+  "replace": [
+   918183650
+  ],
+  "mute": [
+   881088429
+  ],
+  "mute_events": [],
+  "src": "draft 2",
+  "prev_note": "",
+  "_heard": {
+   "sfx_1037001_103703_x_sp2_end_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103703_x_sp2_end_play_p2": {
+    "groups": 1,
+    "muted_by_mix": true,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_103703_x_sp2_end_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.29732426303854875,
+  "_game_len": 0.29732426303854875,
+  "_file": "36 X - Magnetic Resonance end.wav",
+  "_trim": "full (2.05 s file)"
+ },
+ {
+  "key": "Death",
+  "name": "Magneto dies",
+  "moment": "death fall (back, front, sides, chain-sawed)",
+  "sound": "user_leave",
+  "sound_desc": "Discord: someone leaves your voice channel",
+  "when": "Magneto dying (the body fall of every death animation)",
+  "events": [
+   "sfx_1037001_fall_b_play",
+   "sfx_1037001_fall_f_play",
+   "sfx_1037001_fall_lr_play",
+   "sfx_1037001_fall_chain_play"
+  ],
+  "why": "Magneto left the channel. Everyone near you hears it when you go down, every match.",
+  "gain_note": "-2 dB. Replaces the body fall sound.",
+  "tech": "fall_b/f/lr/chain_play fire at t=0.01-0.03 of Dead_B/F/L/R and ChainSawed. All Magneto-only, no other hero or costume bank. The generic fall_play stays vanilla (nothing says when it plays).",
+  "replace": [
+   753159889,
+   979157958,
+   962069597,
+   739333513,
+   753370453,
+   662868590,
+   830074040,
+   195962944
+  ],
+  "mute": [],
+  "mute_events": [],
+  "src": "verifier fix",
+  "prev_note": "",
+  "gain_db": -2.0,
+  "_heard": {
+   "sfx_1037001_fall_b_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_b_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_b_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_f_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_f_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_f_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_lr_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_lr_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_lr_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_chain_play": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_chain_play_p2": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   },
+   "sfx_1037001_fall_chain_play_p3": {
+    "groups": 1,
+    "muted_by_mix": false,
+    "pitches": [
+     0
+    ],
+    "vanilla_left": []
+   }
+  },
+  "_len": 0.6535827664399093,
+  "_game_len": 0.6535827664399093,
+  "_file": "37 Death - Magneto dies.wav",
+  "_trim": "full (1.03 s file)"
+ }
+]
